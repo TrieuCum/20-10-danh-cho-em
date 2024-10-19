@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Chúc Mừng 20/10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="letter-container" id="letterContainer">
+        <div class="open-arrow" id="openArrow">
+            <span class="open-text">Ấn vô thư đi bae</span>
+            <span class="arrow-symbol">&#8595;</span> <!-- Mũi tên chỉ xuống -->
+        </div>
+        <img src="image/loveletter.png" alt="Bức thư" class="letter-image">
+    </div>
+    
+
+    <div class="message-container" id="messageContainer">
+        <div class="message">
+            <p><b>Chúc mừng ngày 20-10!</b> Anh chúc em luôn xinh đẹp, vui vẻ, học giỏi, yêu anh hơn và đặc biệt phải biết yêu bản thân mình hơn nhaaaaaa!!</p>
+        </div>
+        <div class="photo-container">
+            <img src="image/Hinh1.jpg" alt="Người 1" class="person-image">
+            <img src="image/Hinh2.jpg" alt="Người 2" class="person-image">
+        </div>
+        <div class="flower-container">
+            <img src="image/hoa1.png" alt="Hoa" class="flower">
+            <img src="image/hoa2.png" alt="Hoa" class="flower">
+            <img src="image/hoa3.png" alt="Hoa" class="flower">
+            <img src="image/hoa4.png" alt="Hoa" class="flower">
+        </div>
+        <button class="next-button" onclick="showPhotoGallery()">Còn nữa...</button>
+    </div>
+
+    <div class="photo-gallery" id="photoGallery">
+        <div class="arrow left" onclick="prevImage()">&#10094;</div>
+        <img src="image/kiniem1.jpg" alt="Ảnh kỷ niệm" class="gallery-image" id="currentImage">
+        <div class="arrow right" onclick="nextImage()">&#10095;</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
